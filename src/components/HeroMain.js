@@ -30,6 +30,7 @@ export default function HeroMain() {
       >
         <span
           style={{
+            fontFamily: "Google Sans",
             fontStyle: "normal",
             fontWeight: "900",
             fontSize: "3.1rem",
