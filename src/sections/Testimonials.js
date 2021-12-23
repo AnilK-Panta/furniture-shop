@@ -1,5 +1,7 @@
 import ArrowIcon from "../iconify/ArrowIcon";
 import Circle from "../iconify/Circle";
+import Icon1 from "../iconify/Icon1";
+import Icon2 from "../iconify/Icon2";
 
 export default function Testimonials() {
   return (
@@ -15,6 +17,7 @@ export default function Testimonials() {
       }}
     >
       <Circle />
+      <Icon1 />
       <h1
         style={{
           color: "#244D4D",
@@ -46,6 +49,7 @@ export default function Testimonials() {
           gap: "3em",
         }}
       >
+        <Icon2 />
         <img
           src="./images/person1.png"
           alt="client"
