@@ -31,6 +31,13 @@
 .gap-1 {
   gap: 1rem;
 }
+.gap-2 {
+  gap: 2rem;
+}
 .no-list-style {
   list-style: none;
+}
+li {
+  font-size: 1rem;
+  font-weight: 500;
 }

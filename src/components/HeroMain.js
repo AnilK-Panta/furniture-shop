@@ -1,6 +1,20 @@
+import Dots from "../iconify/Dots";
+
 export default function HeroMain() {
   return (
     <div className="wrapper d-flex flex-end p-relative">
+      <div
+        className="dotsWrap p-absolute"
+        style={{
+          top: "50%",
+          left: "50px",
+          zIndex: "100",
+          transform: "translateY(-220%)",
+        }}
+      >
+        <Dots />
+      </div>
+
       <div
         className="heroContent p-absolute"
         style={{
@@ -8,7 +22,8 @@ export default function HeroMain() {
           top: "50%",
           transform: "translateY(-50%)",
           maxWidth: "350px",
-          padding: "50px 50px",
+          padding: "50px 0px",
+          paddingRight: "50px",
           background: "rgba(255, 255, 255, 0.4)",
           backdropFilter: "blur(50px)",
         }}
@@ -17,7 +32,7 @@ export default function HeroMain() {
           style={{
             fontStyle: "normal",
             fontWeight: "900",
-            fontSize: "3rem",
+            fontSize: "3.1rem",
             lineHeight: "60px",
             color: "#244D4D",
           }}
