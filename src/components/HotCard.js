@@ -20,8 +20,7 @@ export default function HotCard(props) {
       <span
         style={{
           fontSize: "1.25rem",
-          fontWeidth: "700",
-          fontFamily: "Roboto",
+          fontWeidth: "900",
         }}
       >
         {props.cardTitle}

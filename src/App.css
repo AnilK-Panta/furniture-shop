@@ -41,6 +41,9 @@
   list-style: none;
 }
 li {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
+  font-family: "Roboto Condensed";
+  letter-spacing: 0.08em;
+  color: #242424;
 }

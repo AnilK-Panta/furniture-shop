@@ -6,7 +6,7 @@ export default function HotDeals() {
     <div
       className="wrapper d-flex"
       style={{
-        padding: "100px 0",
+        padding: "150px 0",
         justifyContent: "space-between",
       }}
     >
