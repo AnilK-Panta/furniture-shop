@@ -21,6 +21,7 @@ export default function AboutUs() {
               fontSize: "3rem",
               fontWeight: "700",
               color: "#244D4D",
+              fontFamily: "Google Sans",
             }}
           >
             About Us

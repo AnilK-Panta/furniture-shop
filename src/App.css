@@ -47,3 +47,11 @@ li {
   letter-spacing: 0.08em;
   color: #242424;
 }
+.activeToggle {
+  color: #3d3d3f !important;
+  font-size: 1.1rem;
+}
+.nonActive {
+  color: #a9a7a6;
+  font-size: 1.1rem;
+}
