@@ -8,7 +8,7 @@ import Testimonials from "../sections/Testimonials";
 
 export default function HomePage() {
   return (
-    <div className="homepageWrapper">
+    <div className="homepageWrapper d-flex column align-center">
       <Hero />
       <Clients />
       <HotDeals />
