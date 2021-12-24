@@ -38,11 +38,13 @@ export default function Products() {
             See All
           </span>
           <div
+            id="allProducts"
             style={{
               position: "relative",
               height: "24px",
               width: "34px",
               backgroundColor: "#E9E9E9",
+              cursor: "pointer",
             }}
           >
             <Arrow />

@@ -1,6 +1,7 @@
 export default function CartIcon() {
   return (
     <div
+      className="cartIcon"
       style={{
         position: "absolute",
         right: "0",

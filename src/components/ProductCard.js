@@ -2,10 +2,12 @@ import CartIcon from "../iconify/CartIcon";
 export default function ProductCard(props) {
   return (
     <div
+      id="productCard"
       style={{
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        height: "450px",
       }}
     >
       <div
@@ -62,6 +64,8 @@ export default function ProductCard(props) {
           zIndex: "1",
           marginTop: "-120px",
           width: "fit-content",
+          transition: "margin-top",
+          transitionDuration: "400ms",
         }}
       />
     </div>

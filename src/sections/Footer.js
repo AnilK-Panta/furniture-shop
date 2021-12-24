@@ -39,7 +39,7 @@ export default function Footer() {
             <span
               style={{
                 padding: "0.8rem 2rem",
-                backgroundColor: "white",
+                backgroundColor: "#FCFBFF",
                 borderRadius: "20px",
                 height: "fit-content",
                 fontFamily: "Roboto Condensed",
@@ -111,10 +111,10 @@ export default function Footer() {
                 color: "white",
               }}
             >
-              <i class="fab fa-facebook-f" />
-              <i class="fab fa-twitter" />
-              <i class="fab fa-linkedin-in" />
-              <i class="fab fa-pinterest" />
+              <i class="fab fa-facebook-f " />
+              <i class="fab fa-twitter " />
+              <i class="fab fa-linkedin-in " />
+              <i class="fab fa-pinterest " />
             </div>
           </div>
           <ul className="footerList">

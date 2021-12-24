@@ -68,3 +68,9 @@ li {
   font-size: 0.9rem;
   margin-top: 1rem;
 }
+#allProducts:hover > div {
+  left: 0px !important;
+}
+#productCard:hover > img {
+  margin-top: -150px !important;
+}

@@ -1,11 +1,14 @@
 export default function Arrow() {
   return (
     <div
+      id="allproductArrow"
       style={{
         position: "absolute",
         left: "-10px",
         top: "50%",
         transform: "translateY(-45%)",
+        transition: "left",
+        transitionDuration: "300ms",
       }}
     >
       <svg
