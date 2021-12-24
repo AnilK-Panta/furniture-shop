@@ -1,5 +1,6 @@
 import ArrowIcon from "../iconify/ArrowIcon";
 import Circle from "../iconify/Circle";
+import Ellipse from "../iconify/Ellipse";
 import Icon1 from "../iconify/Icon1";
 import Icon2 from "../iconify/Icon2";
 
@@ -49,6 +50,7 @@ export default function Testimonials() {
           gap: "3em",
         }}
       >
+        <Ellipse />
         <Icon2 />
         <img
           src="./images/person1.png"
@@ -69,7 +71,7 @@ export default function Testimonials() {
               fontWeight: "bold",
             }}
           >
-            furni.shop
+            furniture shop
           </span>
           <p
             style={{

@@ -30,8 +30,8 @@ export default function AboutUs() {
             style={{
               fontSize: "1.1rem",
               color: "#64717C",
-              lineHeight: "2em",
-              marginTop: "20px",
+              lineHeight: "1.5em",
+              marginTop: "6px",
             }}
           >
             At Besnik Consultancy, we take pride in our values – service,
