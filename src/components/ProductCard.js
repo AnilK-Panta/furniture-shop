@@ -4,80 +4,73 @@ import { setProduct } from "../redux/action/productAction";
 
 export default function ProductCard(props) {
   return (
-    <Link
-      to="/product"
+    <div
+      id="productCard"
       style={{
-        textDecoration: "none",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        height: "450px",
       }}
     >
       <div
-        id="productCard"
         style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          height: "450px",
+          backgroundColor: "#F4F6F6",
+          padding: "2.5rem 4rem",
+          paddingRight: "0",
+          height: "200px",
+          width: "250px",
+          position: "relative",
+          zIndex: "-1",
         }}
       >
-        <div
+        <CartIcon />
+        <span
           style={{
-            backgroundColor: "#F4F6F6",
-            padding: "2.5rem 4rem",
-            paddingRight: "0",
-            height: "200px",
-            width: "250px",
-            position: "relative",
-            zIndex: "-1",
+            fontSize: "1.5rem",
+            color: "#3D3D3F",
           }}
         >
-          <CartIcon />
+          {props.productName}
+        </span>
+        <div
+          style={{
+            display: "flex",
+            gap: "1.5rem",
+            marginTop: "1rem",
+          }}
+        >
           <span
             style={{
-              fontSize: "1.5rem",
+              fontSize: "1.1rem",
               color: "#3D3D3F",
             }}
           >
-            {props.productName}
+            $35.00
           </span>
-          <div
+
+          <span
             style={{
-              display: "flex",
-              gap: "1.5rem",
-              marginTop: "1rem",
+              fontSize: "1rem",
+              color: "#A9A7A6",
+              textDecoration: "line-through",
             }}
           >
-            <span
-              style={{
-                fontSize: "1.1rem",
-                color: "#3D3D3F",
-              }}
-            >
-              $35.00
-            </span>
-
-            <span
-              style={{
-                fontSize: "1rem",
-                color: "#A9A7A6",
-                textDecoration: "line-through",
-              }}
-            >
-              $66.00
-            </span>
-          </div>
+            $66.00
+          </span>
         </div>
-        <img
-          src={`./images/${props.productImage}`}
-          alt="imshr 1"
-          style={{
-            zIndex: "1",
-            marginTop: "-120px",
-            width: "fit-content",
-            transition: "margin-top",
-            transitionDuration: "400ms",
-          }}
-        />
       </div>
-    </Link>
+      <img
+        src={`./images/${props.productImage}`}
+        alt="imshr 1"
+        style={{
+          zIndex: "1",
+          marginTop: "-120px",
+          width: "fit-content",
+          transition: "margin-top",
+          transitionDuration: "400ms",
+        }}
+      />
+    </div>
   );
 }

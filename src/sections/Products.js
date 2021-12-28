@@ -3,11 +3,13 @@ import { useSelector } from "react-redux";
 import ProductCard from "../components/ProductCard";
 import Arrow from "../iconify/Arrow";
 import { ProductDetail } from "../apis/ProductDetail";
+import { Link } from "react-router-dom";
 
 export default function Products() {
   const products = useSelector((state) => state.allProducts.products);
   // const [detail, setdetail] = useState(ProductDetail);
   console.log("this is product", products);
+  // console.log(products[0]);
 
   return (
     <div className="wrapper">
@@ -92,7 +94,14 @@ export default function Products() {
         {products.map((curElem) => {
           const { id, name, image } = curElem;
           return (
-            <ProductCard key={id} productName={name} productImage={image} />
+            <Link
+              to={`/product/${id}`}
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              <ProductCard key={id} productName={name} productImage={image} />
+            </Link>
           );
         })}
       </div>
