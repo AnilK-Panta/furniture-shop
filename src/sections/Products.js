@@ -1,7 +1,14 @@
+import { useState } from "react";
+import { useSelector } from "react-redux";
 import ProductCard from "../components/ProductCard";
 import Arrow from "../iconify/Arrow";
+import { ProductDetail } from "../apis/ProductDetail";
 
 export default function Products() {
+  const products = useSelector((state) => state.allProducts.products);
+  // const [detail, setdetail] = useState(ProductDetail);
+  console.log("this is product", products);
+
   return (
     <div className="wrapper">
       <div
@@ -82,15 +89,12 @@ export default function Products() {
           gap: "3rem",
         }}
       >
-        <ProductCard productName="Hand Base Lamp" productImage="product1.png" />
-        <ProductCard productName="Vintage Chair" productImage="product2.png" />
-        <ProductCard productName="Lamp Tool" productImage="product3.png" />
-        <ProductCard productName="Stylish Chair" productImage="product4.png" />
-        <ProductCard productName="Vintage Chair" productImage="product5.png" />
-        <ProductCard
-          productName="Stackable Chair"
-          productImage="product6.png"
-        />
+        {products.map((curElem) => {
+          const { id, name, image } = curElem;
+          return (
+            <ProductCard key={id} productName={name} productImage={image} />
+          );
+        })}
       </div>
     </div>
   );

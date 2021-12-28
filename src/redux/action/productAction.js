@@ -1,6 +1,7 @@
 import { actionType } from "../contant/action-type";
 
 export const setProduct = (products) => {
+  console.log("from product action", products);
   return {
     type: actionType.SET_PRODUCT,
     payload: products,

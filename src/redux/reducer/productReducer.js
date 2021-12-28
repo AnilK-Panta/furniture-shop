@@ -1,13 +1,7 @@
 import { actionType } from "../contant/action-type";
 
 const initialState = {
-  products: [
-    {
-      id: 1,
-      name: "anil",
-      discreption: "hello my name is anil",
-    },
-  ],
+  products: [],
 };
 
 export const productReducer = (state = initialState, { type, payload }) => {
